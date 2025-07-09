@@ -29,7 +29,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* dark mode için transition */
-html {
+
+/* dark mode için düzgün transition */
+html, body {
   transition: background-color 0.3s, color 0.3s;
 }

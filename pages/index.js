@@ -59,7 +59,7 @@ export default function Home() {
             <div className="border p-4 rounded-lg shadow hover:shadow-xl transition dark:bg-gray-800">
               <h3 className="text-xl font-semibold mb-2">Portfolyo & Blog</h3>
               <p className="mb-2">Next.js + Tailwind + Markdown blog.</p>
-              <a href="/projects" className="text-blue-600 hover:underline">Projeyi Gör →</a>
+              <a href="https://github.com/Alpefoz/portfolio" className="text-blue-600 hover:underline">Projeyi Gör →</a>
             </div>
             
             <div className="border p-4 rounded-lg shadow hover:shadow-xl transition dark:bg-gray-800">
