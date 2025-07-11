@@ -41,12 +41,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Alper Sandal | Full Stack Developer & Web Geliştirici</title>
-        <meta name="description" content="Full Stack Developer olarak Next.js, Node.js ve modern web teknolojileri ile performanslı projeler geliştiriyorum. Portfolyo ve projelerim." />
+        <title>Alper Sandal | Bilişim Sistemleri Öğrencisi & Yazılım Geliştirici</title>
+        <meta name="description" content="Okan Üniversitesi Bilişim Sistemleri öğrencisi. C#, Java, MSSQL ve web teknolojileri ile projeler geliştiriyorum. Yeni fırsatlar arıyorum." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="Full Stack Developer, Next.js, Node.js, React, JavaScript, Web Developer, Alper Sandal" />
-        <meta property="og:title" content="Alper Sandal | Full Stack Developer" />
-        <meta property="og:description" content="Full Stack Developer olarak modern web teknolojileri ile projeler geliştiriyorum." />
+        <meta name="keywords" content="Bilişim Sistemleri, C#, Java, MSSQL, Web Developer, Yazılım Geliştirici, Alper Sandal, Part Time" />
+        <meta property="og:title" content="Alper Sandal | Bilişim Sistemleri Öğrencisi" />
+        <meta property="og:description" content="Okan Üniversitesi öğrencisi. Yazılım geliştirme alanında kendimi geliştirmek istiyorum." />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://alpersandal.com" />
@@ -55,29 +55,116 @@ export default function Home() {
 
       <Navbar toggleDarkMode={() => setDarkMode(!darkMode)} darkMode={darkMode} />
 
-      <main className="max-w-4xl mx-auto px-4 py-12">
+      <main className="max-w-4xl mx-auto px-4 py-12 mt-16">
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.8 }}
+          className="relative text-center mb-20 py-16"
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">Merhaba, ben Alper Sandal 👋</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Full Stack Developer olarak Next.js ve Node.js ile yalnızca web siteleri değil, ne gerekirse onu yaparım.
-            Projeler geliştirmeyi, yeni teknolojileri keşfetmeyi ve sınırları zorlamayı seviyorum.
-          </p>
-          <div className="flex justify-center space-x-6">
-            <a href="https://github.com/Alpefoz" target="_blank" className="hover:text-gray-900 dark:hover:text-white transition-colors">
-              <i className="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/alper-sandal-310864322/" target="_blank" className="hover:text-blue-700 transition-colors">
-              <i className="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="mailto:alpersandal@gmail.com" className="hover:text-red-600 transition-colors">
-              <i className="fas fa-envelope fa-2x"></i>
-            </a>
+          {/* Background Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-blue-900/10 dark:via-purple-900/10 dark:to-pink-900/10 rounded-3xl -z-10"></div>
+          
+          {/* Animated Background Elements */}
+          <div className="absolute top-10 left-10 w-20 h-20 bg-blue-200 dark:bg-blue-700 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-30 animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-32 h-32 bg-purple-200 dark:bg-purple-700 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-30 animate-pulse delay-1000"></div>
+          <div className="absolute top-20 right-20 w-16 h-16 bg-pink-200 dark:bg-pink-700 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-30 animate-pulse delay-500"></div>
+          
+          {/* Main Content */}
+          <div className="relative z-10">
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              className="inline-block mb-6"
+            >
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-75 animate-pulse"></div>
+                <div className="relative px-6 py-2 bg-white dark:bg-gray-900 rounded-full border border-gray-200 dark:border-gray-700">
+                  <span className="text-sm font-medium text-gray-600 dark:text-gray-300">👋 Merhaba, ben</span>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.h1 
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight"
+            >
+              Alper Sandal
+            </motion.h1>
+            
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              className="mb-8"
+            >
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-100">
+                Bilişim Sistemleri Öğrencisi
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Okan Üniversitesi 4. sınıf öğrencisiyim. <span className="font-semibold text-blue-600 dark:text-blue-400">C#, Java ve MSSQL</span> ile projeler geliştiriyorum.
+                <br />
+                <span className="text-base text-gray-500 dark:text-gray-400">Kendimi geliştirebileceğim full-time iş fırsatları arıyorum.</span>
+              </p>
+            </motion.div>
+            
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8"
+            >
+              <a 
+                href="mailto:alpersandal@gmail.com" 
+                className="group relative inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/25"
+              >
+                <i className="fas fa-envelope mr-2"></i>
+                İletişime Geç
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </a>
+              <a 
+                href="#projects" 
+                className="inline-flex items-center px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-blue-500 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
+              >
+                <i className="fas fa-code mr-2"></i>
+                Projelerimi Gör
+              </a>
+            </motion.div>
+            
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.6 }}
+              className="flex justify-center space-x-6"
+            >
+              <a 
+                href="https://github.com/Alpefoz" 
+                target="_blank" 
+                className="group relative p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
+              >
+                <i className="fab fa-github fa-xl text-gray-700 dark:text-gray-300 group-hover:text-black dark:group-hover:text-white transition-colors"></i>
+                <div className="absolute inset-0 bg-gradient-to-r from-gray-800 to-black rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/alper-sandal-310864322/" 
+                target="_blank" 
+                className="group relative p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
+              >
+                <i className="fab fa-linkedin fa-xl text-gray-700 dark:text-gray-300 group-hover:text-blue-600 transition-colors"></i>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+              </a>
+              <a 
+                href="mailto:alpersandal@gmail.com" 
+                className="group relative p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
+              >
+                <i className="fas fa-envelope fa-xl text-gray-700 dark:text-gray-300 group-hover:text-red-600 transition-colors"></i>
+                <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-700 rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+              </a>
+            </motion.div>
           </div>
         </motion.div>
 
@@ -92,18 +179,27 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                3+ yıldır modern web teknolojileri ile projeler geliştiriyorum. Kullanıcı deneyimi odaklı, 
-                performanslı ve ölçeklenebilir çözümler üretmeyi seviyorum.
+                Okan Üniversitesi Bilişim Sistemleri ve Teknolojileri 4. sınıf öğrencisiyim. 
+                Üniversitede Java ve C# dersleri alıyorum.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Arı Bilgi Eğitim Merkezinde 6 aylık yazılım uzmanlığı eğitimi aldım. 
+                Bu eğitimde C#, web programlama ve MSSQL konularında orta düzey bilgi edindim.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                Sürekli öğrenmeye odaklanıyorum ve yeni teknolojileri projelerime entegre etmekten keyif alıyorum.
+                Kendimi geliştirebileceğim bir şirkette okul ile beraber yürütebileceğim full-time bir iş fırsatı arıyorum.
               </p>
             </div>
             <div className="text-center">
               <div className="inline-block p-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full">
                 <div className="w-48 h-48 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                  <i className="fas fa-user fa-4x text-gray-400"></i>
+                  <i className="fas fa-graduation-cap fa-4x text-gray-400"></i>
                 </div>
+              </div>
+              <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                <p><i className="fas fa-map-marker-alt mr-2"></i>Çekmeköy, İstanbul</p>
+                <p><i className="fas fa-birthday-cake mr-2"></i>21 yaşında</p>
+                <p><i className="fas fa-car mr-2"></i>B1 Ehliyet</p>
               </div>
             </div>
           </div>
@@ -111,6 +207,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <motion.div
+          id="projects"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
@@ -123,16 +220,43 @@ export default function Home() {
               className="border p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 dark:bg-gray-800 dark:border-gray-700 bg-white"
             >
               <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-semibold">Portfolyo & Blog</h3>
-                <span className="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded">Aktif</span>
+                <h3 className="text-xl font-semibold">Restoran Otomasyonu</h3>
+                <span className="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded">Tamamlandı</span>
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Modern tasarım ile kişisel portfolyo ve blog sitesi. SEO optimizasyonu ve mobil uyumlu tasarım.
+                C# ve MSSQL kullanarak geliştirdiğim restoran yönetim sistemi. 
+                Sipariş takibi, stok yönetimi ve raporlama özellikleri içeriyor.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">C#</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">MSSQL</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Windows Forms</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <a href="https://github.com/Alpefoz" className="text-blue-600 hover:underline flex items-center">
+                  <i className="fab fa-github mr-2"></i>
+                  Kod
+                </a>
+                <span className="text-sm text-gray-500">Eğitim Projesi</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.02, y: -5 }}
+              className="border p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 dark:bg-gray-800 dark:border-gray-700 bg-white"
+            >
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-xl font-semibold">Portfolyo Sitesi</h3>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Geliştiriliyor</span>
+              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Modern web teknolojileri ile kişisel portfolyo sitesi. 
+                Responsive tasarım ve SEO optimizasyonu içeriyor.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Next.js</span>
                 <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Tailwind</span>
-                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Markdown</span>
+                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">React</span>
               </div>
               <div className="flex justify-between items-center">
                 <a href="https://github.com/Alpefoz/portfolio" className="text-blue-600 hover:underline flex items-center">
@@ -142,34 +266,6 @@ export default function Home() {
                 <a href="#" className="text-blue-600 hover:underline flex items-center">
                   <i className="fas fa-external-link-alt mr-2"></i>
                   Canlı Demo
-                </a>
-              </div>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.02, y: -5 }}
-              className="border p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 dark:bg-gray-800 dark:border-gray-700 bg-white"
-            >
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-semibold">API Tracker</h3>
-                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Tamamlandı</span>
-              </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Node.js ve PostgreSQL ile geliştirilmiş REST API örneği. Veri takibi ve analiz özellikleri.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Node.js</span>
-                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">Knex</span>
-                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">PostgreSQL</span>
-              </div>
-              <div className="flex justify-between items-center">
-                <a href="https://github.com/Alpefoz/tracker-knex" target="_blank" className="text-blue-600 hover:underline flex items-center">
-                  <i className="fab fa-github mr-2"></i>
-                  Kod
-                </a>
-                <a href="#" className="text-blue-600 hover:underline flex items-center">
-                  <i className="fas fa-external-link-alt mr-2"></i>
-                  Demo
                 </a>
               </div>
             </motion.div>
@@ -184,48 +280,87 @@ export default function Home() {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold mb-8 text-center">Yeteneklerim</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {['Next.js', 'Node.js', 'React', 'JavaScript', 'PostgreSQL', 'Tailwind CSS', 'Git', 'REST API'].map((skill) => (
-              <span key={skill} className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-                {skill}
-              </span>
-            ))}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-blue-600 dark:text-blue-400">Üniversite Eğitimi</h3>
+              <div className="flex flex-wrap gap-3">
+                {['Java', 'C#', 'Temel Web Programlama'].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-purple-600 dark:text-purple-400">Özel Eğitim & Kurs</h3>
+              <div className="flex flex-wrap gap-3">
+                {['C# (Orta Düzey)', 'MSSQL', 'Web Programlama', 'Windows Forms'].map((skill) => (
+                  <span key={skill} className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 text-center">
+            <h3 className="text-xl font-semibold mb-4 text-green-600 dark:text-green-400">Kişisel Gelişim</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {['Next.js', 'React', 'Tailwind CSS', 'Git'].map((skill) => (
+                <span key={skill} className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </motion.div>
 
-        {/* Experience Section */}
+        {/* Education Section */}
         <motion.div
+          id="education"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">Deneyim</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Eğitim</h2>
           <div className="space-y-6">
             <div className="flex items-start space-x-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
               <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                <i className="fas fa-code text-white"></i>
+                <i className="fas fa-university text-white"></i>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
-                <p className="text-blue-600 dark:text-blue-400 mb-2">Freelance • 2021 - Devam ediyor</p>
+                <h3 className="text-xl font-semibold mb-2">Bilişim Sistemleri ve Teknolojileri</h3>
+                <p className="text-blue-600 dark:text-blue-400 mb-2">Okan Üniversitesi • 2022 - Devam ediyor</p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Modern web teknolojileri ile özel projeler geliştiriyorum. Next.js, Node.js ve PostgreSQL 
-                  kullanarak performanslı ve ölçeklenebilir çözümler üretiyorum.
+                  4. sınıf öğrencisi. Java, C# ve temel bilgisayar bilimleri dersleri alıyorum.
+                  Modern yazılım geliştirme tekniklerini öğreniyorum.
                 </p>
               </div>
             </div>
             
             <div className="flex items-start space-x-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
               <div className="flex-shrink-0 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <i className="fas fa-code text-white"></i>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold mb-2">Yazılım Uzmanlığı Eğitimi</h3>
+                <p className="text-green-600 dark:text-green-400 mb-2">Arı Bilgi Eğitim Merkezi • 6 ay</p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  C#, web programlama ve MSSQL konularında orta düzey eğitim aldım. 
+                  Pratik projelerle deneyim kazandım.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+              <div className="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
                 <i className="fas fa-graduation-cap text-white"></i>
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-semibold mb-2">Sürekli Öğrenme</h3>
-                <p className="text-green-600 dark:text-green-400 mb-2">Kişisel Gelişim • 2020 - Devam ediyor</p>
+                <h3 className="text-xl font-semibold mb-2">Lise Eğitimi</h3>
+                <p className="text-purple-600 dark:text-purple-400 mb-2">Çekmeköy Okyanus Koleji • 2018-2022</p>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Yeni teknolojileri takip ediyor, açık kaynak projelere katkıda bulunuyor ve 
-                  modern web geliştirme pratiklerini öğreniyorum.
+                  Lise eğitimimi başarıyla tamamladım ve üniversite sınavında bilişim sistemleri ve teknolojileri alanını tercih ettim.
                 </p>
               </div>
             </div>
@@ -239,9 +374,9 @@ export default function Home() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-center mt-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-8"
         >
-          <h2 className="text-3xl font-bold mb-4">Birlikte Çalışalım</h2>
+          <h2 className="text-3xl font-bold mb-4">Full-Time İş Fırsatları</h2>
           <p className="text-lg mb-6 opacity-90">
-            Projeniz için modern ve etkili çözümler arıyorsanız, benimle iletişime geçin.
+            Kendimi geliştirebileceğim bir şirkette okul ile beraber yürütebileceğim full-time bir pozisyon arıyorum.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a 
@@ -258,6 +393,13 @@ export default function Home() {
             >
               <i className="fab fa-linkedin mr-2"></i>
               LinkedIn
+            </a>
+            <a 
+              href="tel:05331297843" 
+              className="inline-flex items-center px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-semibold"
+            >
+              <i className="fas fa-phone mr-2"></i>
+              0533 129 78 43
             </a>
           </div>
         </motion.div>

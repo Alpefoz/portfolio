@@ -29,8 +29,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* dark mode için düzgün transition */
 html, body {
   transition: background-color 0.3s, color 0.3s;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode offset */
+#projects, #education {
+  scroll-margin-top: 100px;
 }
